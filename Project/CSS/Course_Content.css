@@ -1,0 +1,104 @@
+/* Announcement Style */
+    .page .announcement_container {
+        margin-right: 20px;
+
+        width: 850px;
+        border: 1px solid #4E5F92;
+        border-radius: 10px;
+    }
+    .announcement_container h3 {
+        padding: 10px;
+
+        background-color: #4E5F92;
+        border-radius: 10px 10px 0px 0px;
+        color: #e1e2e5;
+    }
+    .announcement_container .announcement {
+        display: flex;
+        flex-direction: column;
+
+        margin: 10px 10px 20px 10px;
+
+        border-bottom: 1px solid #4E5F92;
+    }
+    .announcement .title {
+        padding-bottom: 5px;
+        
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .announcement .date {
+        padding-bottom: 10px;
+
+        font-size: 13px;
+    }
+    .announcement .announcement_content {
+        padding: 0px 10px 10px 10px;
+
+        font-size: 13px;
+    }
+
+    .page .announcement_input_container {
+        width: 510px;
+        /* border: 1px solid #4E5F92; */
+    }
+    .announcement_input_value {
+        display: flex;
+        flex-direction: column;
+    }
+    .announcement_input_value h3 {
+        margin: 5px;
+    }
+    .announcement_input_value .announcement_input,
+    .announcement_input_value .announcement_title {
+        margin-bottom: 10px;
+        padding: 8px;
+
+        height: 200px;
+        width: 100%;
+        outline: none;
+        border: 1px solid #4E5F92;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 16px;
+        resize: none;
+    }
+    .announcement_input_value .announcement_title {
+        height: 32px;
+        border-radius: 8px;
+    }
+    .announcement_input_value .submit_button {
+        padding: 8px;
+
+        border: 1px solid #4E5F92;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: #fcf9f8;
+        background-color: #4E5F92;
+        cursor: pointer;
+    }
+    .announcement_input_value .submit_button:hover {
+        opacity: 0.8;
+        transition: opacity 0.7s;
+    }
+    @media (max-width: 950px) {
+        .course_content .page {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .page .announcement_input_container {
+            margin-top: 20px;
+            padding-top: 20px;
+
+            width: 850px;
+            border-top: 2px solid #4E5F92;
+        }
+    }
+    @media (max-width: 700px) {
+        .page .announcement_container {
+            width: 660px;
+        }
+        .page .announcement_input_container {
+            width: 660px;
+        }
+    }

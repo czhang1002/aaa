@@ -1,0 +1,202 @@
+/* Content Section Style */
+    .body_main_container {        
+        margin-top: 80px;
+        padding: 20px 20px 0px 20px;
+        box-sizing: border-box;
+        border-top: 1px solid #4e5f92;
+    }
+    .default,
+    .profile_information_content,
+    .schedule_content,
+    .map_content,
+    .message_content {
+        overflow: hidden;
+    }
+    .course_content { 
+        padding: 20px 20px 0px 20px;
+        margin-top: 124px;
+
+        box-sizing: border-box;
+    }
+    .course_content .page {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        padding: 7px;
+
+        overflow: hidden;
+    }
+
+/* Map Content Sytle */
+    .map_content {
+        display: grid;
+        grid-template-columns: 720px 250px;
+        column-gap: 40px;
+
+        margin-left: 100px;
+    }
+    .map_content img {
+        width: 720px;
+        border-radius: 50px;
+    }
+
+/* Schedule Style */
+    .schedule_content table {
+        width: 1300px;
+        cursor: pointer;
+    }
+    .schedule_content th, td {
+        text-align: center;
+        padding: 5px;
+
+        width: 200px;
+        border: 2px solid #fcf9f8;
+        background-color: #ccd0d9;
+    }
+    .schedule_content th,
+    .schedule_content .schedule_time {
+        background-color: #4e5f92;
+        color: #fcf9f8;
+    }
+
+/* Message Style */
+    .message_content {
+        display: grid;
+        grid-template-columns: 350px 700px;
+
+        padding-left: 100px;
+
+        height: 650px;
+    }
+    .contacts_container {
+        display: grid;
+        grid-template-rows: 45px 605px;
+
+        /* border-right: 2px solid #4e5f92; */
+        background-color: #e1e2e5;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .contacts_container .contacts_list {
+        border-right: 2px solid #4e5f92;
+        background-color: transparent;
+    }
+    .contacts_container h3 {
+        border-top-left-radius: 10px;
+        border-right: 2px solid #e1e2e5;
+    }
+    .contacts_container h3,
+    .message_container h3 {
+        padding: 15px 10px;
+
+        text-align: center;
+        /* background-color: #c1c4cb; */
+        background-color: #4E5F92;
+        color: #e1e2e5;
+    }
+    .contacts_list .contacts {   
+        display: grid;
+        grid-template-columns: 50px 278px; 
+        align-items: center;
+
+        padding: 10px;
+    }
+    .contacts_list .contacts:hover {   
+        background-color: lightgray;
+        transition: background-color 0.7s;
+    }
+    .contacts_list .contacts.active {
+        background-color: lightgray;
+    }
+    .contacts .name_last_message {
+        display: grid;
+        grid-template-rows: 25px 25px; 
+        align-items: center;
+
+        margin: 0px 0px 0px 10px;
+
+        background-color: transparent;
+    }
+    .name_last_message .name_time {
+        display: grid;
+        grid-template-columns: 228px 40px; 
+
+        background-color: transparent;
+    }
+    .name_time .name {
+        font-weight: bold;
+        background-color: transparent;
+    }
+    .name_time .time {
+        background-color: transparent;
+    }
+    .name_last_message .last_message {
+        font-size: 16px;
+        color: gray;
+        background-color: transparent;
+    }
+
+    .message_container {
+        display: grid;
+        grid-template-rows: 45px 435px 150px;
+
+        border-radius: 0px 10px 10px 0px;
+        background-color: #e1e2e5;
+    }
+    .message_container h3 {
+        border-top-right-radius: 10px;
+    }
+    .message_container .message {
+        display: flex;
+        flex-direction: column-reverse;
+
+        background-color: transparent;
+        overflow: scroll;
+    }
+    .message .receiver,
+    .message .sender {
+        display: flex;
+        flex-direction: row;
+        
+        padding: 20px;
+        margin-bottom: 10px;
+
+        background-color: transparent;
+    }
+    .receiver {
+        justify-content: left;
+    }
+    .sender {
+        justify-content: right;
+    }
+    .each_message_container .profile_image,
+    .contacts_list .profile_image {
+        height: 50px; 
+        width: 50px;
+        border-radius: 100%;
+    }
+    .each_message_container .message_text {
+        padding: 10px 10px 0px 10px;
+    
+        width: 400px;
+        border-radius: 10px;
+    }
+    .receiver .profile_image {
+        margin-right: 10px;
+    }
+    .sender .profile_image {
+        margin-left: 10px;
+    }
+    .message_container .keyboard {
+        padding: 8px;
+        margin: 10px;
+
+        height: 150px;
+        width: 100% - 20px;
+        outline: none;
+        background-color: #e1e2e5;
+        border: 1px solid #4E5F92;
+        border-radius: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        resize: none;
+    }
