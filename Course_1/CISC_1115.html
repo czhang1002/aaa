@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/Main_Page.css">
+        <link rel="stylesheet" href="../CSS/Content.css">
+        <link rel="stylesheet" href="../CSS/Course_Content.css">
+        <title>Teacher View Page</title>
+    </head>
+
+    <body class="body_container">
+        <header class="body_header_container">
+            <a href="../Nav/Main_Page.html"><img class="profile_image" src="../CSS/1.jpg"></a>
+            <div class="title">CISC 1115</div>
+
+            <div class="profile_information">
+                <div class="name">Your Name</div>
+                <menu>
+                    <a href="../Nav/Personal_Profile.html"><li class="nav personal_profile">Personal Profile</li></a>
+                    <li class="nav nav_courses_list">
+                        Courses List
+                        <div class="courses_list">
+                            <menu>
+                                <a href="../Course_1/CISC_1115.html"><li class="nav course_list_1">CISC 1115</li></a>
+                                <a href="../Course_2/CISC_3115.html"><li class="nav course_list_2">CISC 3115</li></a>
+                                <a href="../Course_3/CISC_3110.html"><li class="nav course_list_3">CISC 3110</li></a>
+                            </menu>
+                        </div>
+                    </li>
+                    <a href="../Nav/Schedule.html"><li class="nav schedule">Schedule</li></a>
+                    <a href="../Nav/Map.html"><li class="nav map">Campus Map</li></a>
+                    <a href="../Nav/Message.html"><li class="nav message">Messages(ALL)</li></a>
+                </menu>
+                <button class="logout_button">Logout</button>
+            </div>
+
+            <!-- <div class="logout">
+                <button class="close_button">X</button>
+                <p>Logging out the account?</p>
+                <div class="button">
+                    <button>Yes</button>
+                    <button>No</button>
+                </div>
+            </div> -->
+            <!-- <div class="section_container home">
+                <menu>
+                    <li class="nav">Personal Profile</li>
+                    <li class="nav">CISC 1115</li>
+                    <li class="nav">CISC 3115</li>
+                    <li class="nav">CISC 3110</li>
+                    <li class="nav">Messages(ALL)</li>
+                    https://www.w3schools.com/html/html_iframe.asp
+                </menu>
+            </div> -->
+        </header>     
+
+        <main class="course_body_main_container">
+            <div class="course_home_nav_container">
+                <menu>
+                    <li class="nav active">1Announcements</li>
+                    <li class="nav">Students List</li>
+                    <li class="nav">Assignments</li>
+                    <li class="nav">Documents</li>
+                    <li class="nav">Quizzes & Exams</li>
+                </menu>
+            </div>
+            <div class="course_content">
+                <div class="page">
+                    <div class="announcement_container">
+                        <h3>Announcement:</h3>
+                        <div class="announcement">
+                            <div class="title">
+                                I am title
+                            </div>
+                            <div class="date">
+                                01/23/2024, 01:23
+                            </div>
+                            <div class="announcement_content">
+                                xxxxxxxxxxxxxxxx
+                            </div>
+                        </div>
+                        <div class="announcement">
+                            <div class="title">
+                                I am title
+                            </div>
+                            <div class="date">
+                                01/24/2024, 01:23
+                            </div>
+                            <div class="announcement_content">
+                                xxxxxxxxxxxxxxxx
+                            </div>
+                        </div>
+                    </div>
+                    <div class="announcement_input_container">
+                        <form class="announcement_input_value">
+                            <h3>Title:</h3>
+                            <input class="announcement_title" type="text"></textarea>
+                            <h3>Announcement:</h3>
+                            <textarea class="announcement_input"></textarea>
+                            <input class="submit_button" type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../JS/Profile.js"></script>
+        <script src="../JS/Course_Nav.js"></script>
+    </body>
+
+</html>
