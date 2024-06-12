@@ -9,3 +9,18 @@ register_link.addEventListener("click", () => {
 login_link.addEventListener("click", () => {
     login_main_body.classList.remove("switched");
 });
+
+// login group selection
+const groups = document.querySelectorAll(".group_selected input");
+groups.forEach((group) => {
+    group.addEventListener("click", () => {
+        cleared();
+        group.classList.add("selected");
+    })
+
+    function cleared() {
+        groups.forEach((group) => {
+            group.classList.remove("selected");
+        })
+    }
+})
